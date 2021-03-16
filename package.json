@@ -1,0 +1,61 @@
+{
+  "name": "MyTestApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "npx react-native run-android",
+    "ios": "npx react-native run-ios",
+    "start": "npx react-native start --reset-cache",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "clean": "rm -rf node_modules && rm -rf package-lock.json && npm i && npm run android:clean && npm run ios:clean",
+    "android:clean": "cd android && ./gradlew clean",
+    "ios:clean": "cd ios && rm -rf Podfile.lock && rm -rf Pods && pod install",
+    "build": "rm -rf dist/ && webpack --mode=production --config webpack.config.js",
+    "web": "webpack serve --mode=development --config ./web/webpack.config.js",
+    "web:start": "react-scripts start"
+  },
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "^17.0.1",
+    "react-native": "0.64.0",
+    "react-native-web": "^0.15.0",
+    "react-scripts": "^4.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@svgr/webpack": "^5.5.0",
+    "@types/jest": "^25.2.3",
+    "@types/react-native": "^0.63.2",
+    "@types/react-test-renderer": "^16.9.2",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-react-native-web": "^0.15.0",
+    "eslint": "^7.14.0",
+    "html-webpack-plugin": "^5.3.1",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.64.0",
+    "react-test-renderer": "17.0.1",
+    "typescript": "^3.8.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.26.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "resolutions": {
+    "@types/react": "^16"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
