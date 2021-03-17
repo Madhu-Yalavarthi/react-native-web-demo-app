@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 const App = () => {
     return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor:'red' }}>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor:'green' }}>
             <Text>Hello world</Text>
         </View>
     );
