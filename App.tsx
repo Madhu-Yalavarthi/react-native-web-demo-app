@@ -9,12 +9,15 @@ import {
 } from 'react-native';
 
 
+import { NavigationContainer } from '@react-navigation/native';
+import { AppNavigation } from './src/app';
+declare const global: { HermesInternal: null | {} };
 
 const App = () => {
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems:'center'}}>
-      <Text>{`Hello world`}</Text>
-    </View>
+    <NavigationContainer>
+      <AppNavigation />
+    </NavigationContainer>
   );
 };
 
