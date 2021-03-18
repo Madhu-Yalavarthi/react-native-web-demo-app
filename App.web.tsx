@@ -10,7 +10,7 @@ import {
 
 
 import { NavigationContainer } from '@react-navigation/native';
-import { AppNavigation } from './src/app/mobile.nav';
+import { AppNavigation } from './src/app/web.nav';
 declare const global: { HermesInternal: null | {} };
 
 const App = () => {
