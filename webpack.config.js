@@ -15,7 +15,8 @@ const compileNodeModules = [
   '@react-native-community/masked-view',
   '@react-navigation/native',
   '@react-navigation/stack',
-  'react-native-safe-area-context'
+  'react-native-safe-area-context',
+	'react-native-contacts'
 ].map((moduleName) => path.resolve(appDirectory, `node_modules/${moduleName}`));
 
 const babelLoaderConfiguration = {
