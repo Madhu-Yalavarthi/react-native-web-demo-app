@@ -100,21 +100,6 @@ export function ContactsScreen(props: Props) {
 				data={contacts}
 				renderItem={({ item, index }) => {
 					return (
-						// <View style={{
-						// 	width: '100%',
-						// 	paddingTop: 20,
-						// 	paddingBottom: 20,
-						// 	paddingLeft: 30,
-						// 	paddingRight: 30,
-						// 	backgroundColor: '#fbfbfb',
-						// 	display: 'flex',
-						// 	borderBottomWidth: 2,
-						// 	borderBottomColor: '#fcfcfc'
-						// 	// justifyContent: 'flex-start',
-						// 	// alignItems: 'center'
-						// }}>
-						// 	<Text>{item.displayName}</Text>
-						// </View>
 						<Pressable
 							onPress={() => { }}
 							style={({ pressed }) => ({
