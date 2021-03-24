@@ -61,7 +61,6 @@ const imageLoaderConfiguration = {
 module.exports = {
   entry: {
     app: path.join(__dirname, 'src/index.web.js'),
-		// 'service-worker': path.join(__dirname, 'src/service-worker.ts'),
   },
   output: {
     path: path.resolve(appDirectory, 'dist'),
@@ -98,9 +97,9 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       // See: https://github.com/necolas/react-native-web/issues/349
-      __DEV__: JSON.stringify(true),
-			'process.env.NODE_ENV':  JSON.stringify('development'),
-			'process.env.PUBLIC_URL':  JSON.stringify('')
+      __DEV__: JSON.stringify(false),
+			'process.env.NODE_ENV':  JSON.stringify('production'),
+			'process.env.PUBLIC_URL':  JSON.stringify(path.resolve(__dirname, 'public'))
     }),
   ],
 };
