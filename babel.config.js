@@ -1,6 +1,7 @@
 const path = require('path');
 
 process.env.PUBLIC_URL = path.resolve(__dirname, 'public');
+process.env.NODE_ENV = 'development';
 
 module.exports = {
   presets: ['module:metro-react-native-babel-preset'],

@@ -22,17 +22,17 @@ export function CameraWebScreen(props: any) {
                 justifyContent: 'center',
                 alignItems: 'center',
             }}>
-                <a style={{ 
-                    width: '50%', 
-                    height: 50, 
-                    backgroundColor:'#7247a2', 
-                    borderRadius: 10, 
-                    display:'flex', 
-                    justifyContent:'center', 
+                <a style={{
+                    width: '50%',
+                    height: 50,
+                    backgroundColor:'#7247a2',
+                    borderRadius: 10,
+                    display:'flex',
+                    justifyContent:'center',
                     alignItems:'center',
                     color: '#fff',
                     fontWeight: 'bold', 
-                }} onClick={()=>{photoInput.click()}}>
+                }} onClick={()=>{(document.getElementById('photoInput') as HTMLInputElement).click()}}>
                     <span>Upload</span>
                 </a>
             </div>
