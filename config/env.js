@@ -8,7 +8,6 @@
 // @remove-on-eject-end
 'use strict';
 
-process.env.NODE_ENV = 'development';
 const fs = require('fs');
 const path = require('path');
 const paths = require('./paths');
