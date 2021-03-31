@@ -62,6 +62,7 @@
 		"jest.config.js"
 	],
 	"include": [
-    "src"
+    "src",
+		"src/custom.d.ts"
   ]
 }
