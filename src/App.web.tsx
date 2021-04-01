@@ -10,12 +10,13 @@ import {
 
 
 import { NavigationContainer } from '@react-navigation/native';
-import { AppNavigation } from './app/web.nav';
+import { AppNavigation, linking } from './app/web.nav';
 declare const global: { HermesInternal: null | {} };
 
 const App = () => {
+
   return (
-    <NavigationContainer>
+    <NavigationContainer linking={linking}>
       <AppNavigation />
     </NavigationContainer>
   );

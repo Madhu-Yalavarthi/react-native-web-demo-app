@@ -1,9 +1,6 @@
 
-process.env.DISABLE_ESLINT_PLUGIN = 'true';
-process.env.NODE_ENV = 'development';
-
 module.exports = {
-  presets: ['@babel/preset-env']
+  presets: ['module:metro-react-native-babel-preset'],
 };
 // module.exports = {
 //   presets: ['module:metro-react-native-babel-preset'],
@@ -17,3 +14,7 @@ module.exports = {
 //     "transform-inline-environment-variables"
 //   ]
 // };
+
+// ["@babel/preset-react", {
+// 	"runtime": "automatic"
+// }]

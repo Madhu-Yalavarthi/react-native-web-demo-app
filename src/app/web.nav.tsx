@@ -18,3 +18,16 @@ export function AppNavigation() {
         </Stack.Navigator>
     )
 }
+
+export const linking = {
+	prefixes: [],
+	config: {
+		screens: {
+			Home: '',
+			Camera: '/camera',
+			Qrcode:'/qrcode',
+			Result: '/result',
+			Contacts: 'contacts'
+		}
+	},
+};
